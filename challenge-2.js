@@ -10,7 +10,7 @@ function chunks(num) {
     }
 }
 
-console.log(chunks(4))
-console.log(chunks(1))
-console.log(chunks(8))
-console.log(chunks(2))
+console.log(chunks(4)) //chunk-chunk-chunk-chunk
+console.log(chunks(1)) //chunk
+console.log(chunks(8)) //chunk-chunk-chunk-chunk-chunk-chunk-chunk-chunk
+console.log(chunks(2)) //chunk-chunk
