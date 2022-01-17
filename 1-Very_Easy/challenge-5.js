@@ -1,6 +1,9 @@
-function letter(str) {
-  const sortedArray = str.toLowerCase().split('').sort()
-  return sortedArray[sortedArray.length - 1]
+function letter(str) {	
+  const lowerCaseString = str.toLowerCase()
+	const lettersArray = lowerCaseString.split('')
+  const sortedLetters = lettersArray.sort()
+  
+  return sortedLetters[sortedLetters.length - 1]
 }
 
 console.log(letter('Lorem ipsum dolore sec avanti')) // 'v'
