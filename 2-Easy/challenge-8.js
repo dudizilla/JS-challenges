@@ -1,3 +1,9 @@
+/* Desafio nº 8
+    Escreva uma função que recebe uma string contendo um nome completo e retorna uma string com todos
+  os nomes, exceto o último, abreviados e o último nome em letras maiúsculas antes das abreviações e 
+  separado por vírgula.
+*/
+
 function quotes(fullName) {
   const names = fullName.split(' ')
   let initials = ''

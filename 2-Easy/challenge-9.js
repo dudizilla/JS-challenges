@@ -1,3 +1,8 @@
+/* Desafio nº 9
+    Escreva uma função que recebe uma string, verifica se ela possui a mesma quantidade de cada letra que
+  a compõe e retorna true caso possua ou false caso não possua.
+*/
+
 function checkBalance(str) {
   const charCount = {}
 

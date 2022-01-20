@@ -1,3 +1,8 @@
+/* Desafio nº 4
+    Escreva uma função que recebe um número inteiro qualquer, eleve ao quadrado cada 
+  um de seus algarismos e depois concatene o resultado retornando um único número inteiro
+*/
+
 function squareDigits(num) {
   const str = num.toString()
   let result = ''

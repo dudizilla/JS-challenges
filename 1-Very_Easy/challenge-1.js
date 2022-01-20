@@ -1,4 +1,7 @@
-// Desafio nº 1 
+/* Desafio nº 1
+    Escreva uma função que recebe um número qualquer de números
+  inteiros como argumentos e retorne a média aritmética entre eles
+*/
 function average(numbers) {
   let sum = 0
 

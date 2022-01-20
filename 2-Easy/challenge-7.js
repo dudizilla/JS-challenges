@@ -1,3 +1,8 @@
+/* Desafio nº 7
+    Escreva uma função que recebe um array bidimensional de inteiros e retorna um único array
+  contendo todos os números em ordem ascendente.
+*/
+
 function flatAndSort(arr) {
   const numbers = []
 

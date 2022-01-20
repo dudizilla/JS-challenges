@@ -1,3 +1,10 @@
+/* Desafio nº 6
+    Escreva uma função que recebe uma string e retorna cada palavra da string invertida e em letras
+  minúsculas, porém com as palavras na mesma ordem.
+    Assuma que a string não possui nenhuma letra com acento, número ou caractere especial, apenas
+  letras e espaços
+*/
+
 function invert(str){
   const wordsArray = str.split(' ')
   const invertedWords = wordsArray.map((word) => {
