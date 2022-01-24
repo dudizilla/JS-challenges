@@ -10,3 +10,32 @@
   4. Encontre o resto da divisão do resultado do passo anterior por 10;
   5. Se o resto da divisão for 0, o dígito verificador é 0, do contrário o dígito verificador é 10 - resto
 */
+
+function generateDigit(arr) {
+  const step1 = arr.reduce((accum, current, index) => {
+    return index === 0 || index % 2 === 0 ? accum + current : accum
+  }, 0)
+
+  const step2 =  step1 * 3
+
+  const step3 = step2 + arr.reduce((accum, current, index) => {
+    return index % 2 !== 0 ? accum + current : accum
+  }, 0)
+
+  return step3 % 10 !== 0 ? 10 - step3 % 10 : 0 
+}
+
+function verifyCode(code) {
+  const numberArray = code.toString().split('').map(Number)
+
+  const arrayWithoutDigit = numberArray.slice(0, -1)
+
+  const correctDigit = generateDigit(arrayWithoutDigit)
+
+  return correctDigit === numberArray[numberArray.length -1]
+}
+
+console.log(verifyCode(547020743789))
+console.log(verifyCode(301354030348))
+console.log(verifyCode(301354030349))
+console.log(verifyCode(123456789872))
